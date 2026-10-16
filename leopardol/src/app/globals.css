@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-gold: #c8a165;
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-orbitron);
+}
+
+body {
+  background: #fff;
+  color: #111;
+}
+
+/* Leopard-spot placeholder pattern used where product photos will go. */
+@utility spots {
+  background-image:
+    radial-gradient(circle at 20% 30%, rgb(0 0 0 / 0.18) 0 6%, transparent 7%),
+    radial-gradient(circle at 70% 60%, rgb(0 0 0 / 0.18) 0 5%, transparent 6%),
+    radial-gradient(circle at 45% 80%, rgb(0 0 0 / 0.14) 0 4%, transparent 5%),
+    radial-gradient(circle at 85% 20%, rgb(0 0 0 / 0.14) 0 4%, transparent 5%);
+  background-size: 120px 120px;
+}
